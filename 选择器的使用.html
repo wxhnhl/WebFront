@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>选择器的使用</title>
+	<style>
+		a:link{color:aliceblue;}
+		a:visited{color:antiquewhite;}
+		a:hover{color:black;}
+		a:active{color:brown;}
+		a:checked
+		h3:after{content:url(image/logo.jpg);}
+		h3:before{content:url(image/logo.jpg);}
+		h1 em{color:antiquewhite;}
+		h2>em{color:antiquewhite;}
+			h3~p{
+			color:antiquewhite;
+		}
+		p:first-line{color:antiquewhite;
+		font-variant: small-caps;
+		}
+		p:first-letter{
+			color:aqua;
+			font-size: xx-large;
+		}
+	</style>
+</head>
+
+<body>
+ <a href="Untitled-5.html">超链接</a>
+ <h1>eafrgthyu<em>wfeasrgh</em></h1>
+ <h2>eafrgthyu<em>wfeasrgh</em>sdafgafsds<em>efrgfsfadfd</em>fdgh
+ <h2>eafrgthyu<em>wfdsfeasrgh</em>sdasfdfgafsds<em>efrgfsfadfd</em>fdgh</h2></h2>
+ <div>
+ 	<h3>efrgth</h3>
+ 	
+ </div>
+ 	<p id="abc">dsfa</p>
+ 	<p class="cde">dsfa</p>
+ 	<p>dsfa</p>
+ 	<p>dsfa</p>
+ 	<script>
+    	var element=document.querySelector("#abc");
+ 		var element1=document.querySelector(".cde");
+		var element2=document.querySelectorAll("p");
+		console.log(element);
+		console.log(element1);
+		for( var i=0;i<element2.length;i++){
+			var elemment3 = element2[i];
+			console.log(elemment3);
+		}
+		
+		
+	</script>
+</body>
+</html>

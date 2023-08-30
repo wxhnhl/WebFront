@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head><style>
+		label{position: relative;}
+		#btn{margin-right:5px;}
+		#uploadFile{position:absolute;
+		left:0;
+		top:0;
+			/*		opacity: 0;}*/
+	}
+	</style>
+	<script>
+	
+		$('body').delegate('uploadFile','change',function(e){
+			if($(this).val()!=''){
+				var fileName=val.substring(val.lastIndexOf('\\')+1);
+				$(("#text").html(fileName);
+			}else{}
+		})
+	</script>
+<meta charset="utf-8">
+<title>简历</title>
+</head>
+
+<body ><h1 align="center">客户信息</h1>
+	<form>
+<fieldset>
+		<legend>区域1</legend>
+		<input type="button" id="btn" value="选择文件"><span id="text" >未选择任何文件</span>
+		<input type="file" name="upload" id="uploadFile">
+		<input type="radio" name="course" value="01" id="cs_java" ><label for="cs_java">java程序设计</label>
+		<input type="radio" name="course" value="02" id="cs_os"><label for ="cs_os">操作系统</label>
+		<input type="radio" name="course" value="03" id="cs_se"><label for="cs_se">软件工程</label><br>
+		</fieldset>
+		<br>
+		<fieldset>
+<input type="checkbox" name="place" value="01" id="p_01"><label for="p_01" >北戴河</label>
+		<input type="checkbox" name="place" value="02" id="p_02"><label for="p_02">玻璃博物馆</label>
+		<input type="checkbox" name="place" value="03" id="p_03" checked><label for="p_03" >鸟类博物馆</label><br>
+		</fieldset>	
+		<br>
+		<br>
+		<fileset>
+			<lenged>区域3</lenged>
+		<span>选择景区：</span>
+		<select clas=""id="" >
+			<optgroup label="博物馆">
+				<option value="01">博物馆</option>
+				<option value="02" selected>玻璃博物馆</option>
+				<option value="03">鸟类博物馆</option>
+			</optgroup>
+			<optgroup label="文化景点">
+				<option value="01">北戴河</option>
+				<option value="02" selected>求仙入海处</option>
+				<option value="03">海港区东北大学</option>
+			</optgroup>
+		</select>
+		<input type="number" name="guests" min="1" max="6">		
+		<input type="range" name="s" min="1" max="6"  step="1">	
+		</fieldset>			
+	</form>
+</body>
+</html>

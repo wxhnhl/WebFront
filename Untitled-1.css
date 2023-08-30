@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font:normal lem 宋体； margin:lem 10%;
+}
+h1{
+	font:italic 3em Georgia;color:rgba(30,127,109);maargin:lem 0 lem;
+}
+img{
+	margin: 10px 20px  0px 80px;
+}
+hl img{
+	margin-bottom: -20px;
+}
+small{
+	color:#666666
+}
+border{
+	border:5px blue;
+	padding :3px;
+	margin:10px;
+	width:100px;
+	height：100px;
+	float:left;
+	background-color: rgb(189,208,233);
+	color:rgba(40,141,83,0.21)
+}
+tsxt{
+	ublink;
+}
+@keyframes wobble{
+	%0{margin-left: 100px;
+		background: green;	
+	}
+	%40{margin-left: 150px;
+		background: orange;
+	}
+	%60{
+		margin-left: 75px;
+		background: blue;
+	}
+	%100{
+		margin-left: 100px;
+		background: red;
+	}
+}
+table{
+	animation:wobble .2s ease-in;
+}

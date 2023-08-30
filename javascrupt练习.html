@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScript的使用</title>
+<style>
+	p{width:300px;
+	   margin: 50px auto;
+	  border:1px black solid;
+		line-height: 200px;
+		text-align: center;
+</style>
+<script src="js1.js"></script>
+</head>
+
+<body>
+	<script>
+	document.body.addEventListener("mousemove",function changecolor(){document.body.style.color="red";},false);
+	
+	</script>
+	<p onMouseOver="consolelog('hello javascript')">;鼠标移过来</p>
+	<script>
+		function consolelog(str){
+			console.log(str);
+		}
+	</script>
+	<p>
+		外部文件
+		<script>writeHello();</script>
+	</p>
+</body>
+</html>
